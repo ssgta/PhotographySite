@@ -11,8 +11,8 @@ body {
 }
 
 blockquote {
-	font-weight: 100;
-	font-size: 2rem;
+	font-weight: 400;
+	font-size: 1.3rem;
 	max-width: 600px;
 	line-height: 1.4;
 	position: relative;
@@ -31,12 +31,14 @@ blockquote:after {
 
 blockquote:before {
 	content: '“';
+    color: rgb(182, 182, 182);
 	left: -5rem;
 	top: -2rem;
 }
 
 blockquote:after {
 	content: '”';
+    color: rgb(182, 182, 182);
 	right: -5rem;
 	bottom: 1rem;
 }
