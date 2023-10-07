@@ -1,0 +1,26 @@
+.content-wrapper {
+    margin-left: 240px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.section-title-wrapper {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.section-title {
+    font-weight: 500;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 8px;
+}
