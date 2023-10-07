@@ -36,14 +36,15 @@
 
 .middle-section {
     display: grid;
-    grid-template-columns: 33% 1fr;
     background-color: rgb(252, 252, 252);
+    text-transform: uppercase;
+    font-size: 12px;
+    place-items: center;
 }
 
 .nav-items *{
     display: grid;
-    justify-content: left;
-    align-items: center;
+    place-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
     text-decoration: none;

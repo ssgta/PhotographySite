@@ -1,7 +1,7 @@
 .scroll-section {
     display: grid;
     place-items: center;
-    height: 100vmin;
+    height: 70vmin;
 }
 
 .content-wrapper {
