@@ -1,3 +1,9 @@
+.scroll-section {
+    display: grid;
+    place-items: center;
+    height: 100vmin;
+}
+
 .content-wrapper {
     margin-left: 240px;
     margin-top: 10px;
