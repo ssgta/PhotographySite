@@ -1,63 +1,43 @@
-.sidebar {
-    background-color: rgb(235, 235, 235);
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+    background-color: rgb(22, 24, 23); /* rgb(252, 252, 252) */
+  }
+  .page-header nav {
     display: flex;
-    flex-direction: column;
-    float: left;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
-    margin-right: 10px;
-    z-index: 100;
-}
-
-.nav-wrapper {
-    width: 200px;
-}
-
-.top-section, .middle-section {
-    padding: 8px;
-}
-
-.top-section {
-    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(252, 252, 252);
-    margin-bottom: 10px;
-    height: 200px;
-}
+    width: 100%;
+  }
 
-.top-section img {
-    width: 55%;
-}
-
-.middle-section {
-    display: grid;
-    background-color: rgb(252, 252, 252);
+  .page-header a {
     text-transform: uppercase;
-    font-size: 12px;
-    place-items: center;
-}
-
-.nav-items *{
-    display: grid;
-    place-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
     text-decoration: none;
-    color: rgb(150, 150, 150);
+    color: rgb(165, 165, 165); /* rgb(150, 150, 150) */
+    font-size: 13px;
     transition: all 0.25s ease;
-}
+  }
 
-.nav-items *:hover {
-    color: rgb(230, 8, 82);
-}
+  .page-header a:hover {
+    color: rgb(231, 215, 141); /* rgb(230, 8, 82) */
+  }
+  
+  .page-header ul {
+    display: flex;
+    order: 1;
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    place-content: center;
+  }
+  
+  .page-header ul li:not(:last-child) {
+    padding-right: 15px;
+  }
 
 .current-page {
-    color: black;
+    color: white !important;
     font-weight: 600;
     pointer-events: none;
 }
