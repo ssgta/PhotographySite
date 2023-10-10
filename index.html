@@ -1,307 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- META -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- TITLE -->
-    <title>Home</title>
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/header.css">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap" rel="stylesheet">
-    <!-- SCRIPTS -->
-    <script defer src="js/app.js"></script>
-</head>
-<body>
-    <header class="page-header">
-        <nav>
-            <ul>
-                <li><a class="current-page" href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Photos</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <title>Dev server</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#Resume">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          
+        </button>
+      </nav>
     </header>
-    <main class="page-main">
-        <section class="background-dark grid grid-height-90vh">
-            <div class="grid-item">
-                <p class="fade-in-text">
-                    <span>Hello,</span>
-                    <span>I'm</span>
-                    <span>Iain.</span>
-                    <span>This</span>
-                    <span>site</span>
-                    <span>is</span>
-                    <span>to</span>
-                    <span>showcase my</span>
-                    <span>photography</span>
-                    <span>and</span>
-                    <span>to</span>
-                    <span>learn</span>
-                    <span>HTML,</span>
-                    <span>CSS,</span>
-                    <span>and</span>
-                    <span>JavaScript.</span>
-                    <span>So</span>
-                    <span>take</span>
-                    <span>a</span>
-                    <span>look</span>
-                    <span>around :)</span>
-                </p>
-            </div>
-        </section>
-        
-        <!-- PUT THIS SECTION IN THE ABOUT / READING BIT-->
-    <!--
-        <section class="background-dark-grey grid">
-            <div class="hidden">
-                <blockquote>The most important step a man can take? It’s not the first one, is it? It’s the next one. Always the next step, Dalinar.
-                </blockquote>
-                <cite>Oathbringer (The Stormlight Archive - book 3) | Brandon Sanderson</cite>
-            </div>
-        </section>
-    -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/me_portrait.jpg" alt="Profile picture">
+        <h2 class="hero__subtitle">Hi, I'm Iain</h2>
+        <h1 class="hero__title">RPA DEVELOPER &<br />HOBBYIST PHOTOGRAPHER</h1>
+        <p class="hero__description">In my professional life, I'm a <strong>Robotics Process Automation (RPA) Developer</strong> of 4 years (as of Dec 2023). And in my freetime I'm a hobbyist photographer, who is also keen to explore and improve as a front-end web developer.</p>
+        <a class="hero__btn btn" href="#">Reach Out</a>
+      </section>
 
-        <section class="background-dark grid">
-            <!-- WHOLE IMAGE SECTION -->
-            <div class="grid-item-header">
-                <div class="grid-item-title">
-                    Pentland Hills - Glencorse Reserve [2023]
-            </div>
-            </div>
-            <div class="image-grid">
-                <!-- COLUMN FOR GROUP TITLE -->
-                <div class="image-grid-column">
-                    <!-- ROW FOR GROUP TITLE -->
-                    <div class="image-grid-row">
-                        <!-- ALL THE IMAGES IN THE ROW -->
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHfK4UGxl3bTwPkNczbHb0RN9fjiM9wIwY8-jTwh11be4ybrE7XYCTP-UoT4KznSC8HC9U-UD72yBF4KJfmKUuiRx9xKE_O6lxNxzC-ueoar4u6JT9qk0BWbWNLNpNoBjkGvPYjLYD6mXFfEi1DelOc3=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHf0MzH7o0eHseg4SOmCqzW8iZeYGCKnrJWOx1JF4gaq8fhpKvDMkf8ssEJjDeV0yBFeuOHm426tB4CUxGPkmE-Re29VQKadmuk8EVeBrBUYN85d_eGkjlXoCMLkUuFUUS1z3YoG6zybwZrJD7PEBZeY=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHdXwXl8SiRH27X88M0oA2AKQvGqrPw_zjFWcKYnBaxYECU4kdauZd0MpjWont_1kIr_uS4UObUkvpVKidRL6-nhIdO5cAafkJ1KRBu8IfBUpq13T5sa3FKOEeMYgS5btHbBrmtk8xVl0U4feiP2_-gt=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHeuKXry_q8Xa7flo0sUSosoyQ3oA782BDNUZKGZEdwMY3aaw1cJSA67wCEOeK4KIaKVE-RCaSwFGmov9EXoCzenpQrJFvcBxdXL05vWkj7kv_f8xvIznfLmJyiIkP5IFBh8WITsdh4Ekk34HPv4lIzH=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHdwgt0yM1aTQEopJfO6GdYr1bhrt7Nm6NHmrgf6ptDiuKi6gPDUqL2r3BY_VHqOvmSfCKLYYukAQjAXg49jfa4POeZpdSQzlq8t3f9kA11McE2EkTjfsqDI0r6nGL49ETDNpwS66QJJa6vmLnN5ESpV=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHd-Qxve25bqjxoWHaqnF9xN7q5paBHMAfKNFgCDx-7_m5ONavPVi9oRUKkPpq6KlTwk8Y-P6odM1uEBhqIDauPMlyH5ju2PU6J_MxXzk1XVKiSMtvs7gaYSwsAVIoRqCvtmMjgahjMQ_H9xhPKh2jc6=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- WHOLE IMAGE SECTION -->
-            <div class="grid-item-header">
-                <div class="grid-item-title">
-                    Whitby [2023]
-            </div>
-            </div>
-            <div class="image-grid">
-                <!-- COLUMN FOR GROUP TITLE -->
-                <div class="image-grid-column">
-                    <!-- ROW FOR GROUP TITLE -->
-                    <div class="image-grid-row">
-                        <!-- ALL THE IMAGES IN THE ROW -->
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHd-PlCRWoHMn5kFHLOnz1eE2IapxVWYisyJEba9di_GDcY8M1llIkOhOpXqvjLquxuR0w88AYhKlRDV3mTkFAXM9IPgwMabhP395ZhruT-ID7gleHWGNNTBfhDaWiWOEis88CkyoRiL1-GPx4IgeJM0=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcmISnL5Sh_O-OoSvN4ly9SEQpK7GBjJY4C1W7Cl_8Fy9zYAEMDEDs5IgxFWi254z-UzvEm0F0DxOwuaFBobUQBVPWsa1xrFqvLv05ZOqQBb_8F5cW553eX70wcfdhOukH3WH8CXory42KZ5pIyrE98=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHd8OsHfW1nREhECKOozCz3ykR3t99ZjoPrf4EfLQRnfwFRN7RWVVF3pk4s38T0mxqxVTZ8E8ALSjaEOkhvA4_6PR0AK2dUzm3gtMS_QkujtywWrQYy5Syu4rADM8Zn408ROagC2aJzowaIfwuElEw2H=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcqID_bbzi8-I_v4pdAZRDts-HDoRv9FGyhwBd26EwJIX83rLWHwucEjXsln1taPkSTk2ndpx_MKod5iHxCNhQxyvvO-lLyrcHyIiannVEQtoH7YVPYNPZOCnuY2L9ClfMDrcw7aW-w6nmFOL6c3QF6=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHc851TIAfunQwSuY7eza-FofVWDFRSXh0PvKSSGD6Hklsv1vCrfuYpAWVqJkLp1R6TQNe9hFyYDZOCtuauQsDk9yOmJmk1nwsSxFnNhLuWY0m2uYst7OyutHTL1rCJ05L4CqeYcPPyK4WTK2VOdBZwv=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHc8Ax1aqAmBhCa7wnnY7RrxZAfqWjfVX7FuaJvSMhYcjZLlS7yHtAYIUf_0Mn7aqZ8yH8muBx143ZV3yHkE6fUUtOIhuv1LnpovLNNwIb-81CGgD0UDGmupTZCdfO9QkEm2TKA1Da4aKyKiG34v1nPn=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- WHOLE IMAGE SECTION -->
-            <div class="grid-item-header">
-                <div class="grid-item-title">
-                    Roslin Glen Country Park [2022]
-            </div>
-            </div>
-            <div class="image-grid">
-                <!-- COLUMN FOR GROUP TITLE -->
-                <div class="image-grid-column">
-                    <!-- ROW FOR GROUP TITLE -->
-                    <div class="image-grid-row">
-                        <!-- ALL THE IMAGES IN THE ROW -->
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHdlQqt24eSGQYZbwF7uFfj0G9LClASd0sAtjgCkGUjXZTs1T2tIP4qsns_buhQFZovRiEd3DTqBRfN3d16l8dvrd9o-XkjCYImEfKYcHw-5jO0gamCPIxlJBRWGTNNqU3XR-Sm7krcAdMvWQ14tP21Y=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHfbpNxHLnCbvMXZqd2paDmkILT-OdmcULO4-L41DxXwHoAb5CoOkuBUmTzMFZrNO8YLXAk8LPDBLJNT9PMx8rW3ABPSAK6KFV0F_G_GO3ypo-rrNd1pKqgkwLCO9YftDDOfcBwoYKt18avqb0hNYQQP=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHdX2xNGgymGMjmEIHJITPn5prsovG2nUkDiqZv0D2vqH9M5Gff19fGgF05P9O5qPDWZbpsWO24j63ss_bC6_GZlrvIeX1gUl1ohRIi9Gj8Rz5p2qdyZ1RopEvXzPKT_-DBELBaliBaxb-wxrs4qxe5H=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHeu4iVO7RX2yTWrxHSCRTLHEdR_A9B-EBO1VdMvpJlt5t2XwutSPEVnIeLxFhcsj549yQcfvMKEQlkXAaasi6AEj8ZNxNSADebK8q_mYUfCmgKV3_x1iwgFqpNfgmru4MGR2Y0Ui7rS7nXBtNZZFbKG=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHeYu208W2VVOMAe_o_miBDLMmA7uEwXnQkKSF3VkbxmA97DATB89ESiHfIvNAx5LcGcVXh2Y8I53RqNqnC7KNwWl8vzjl-lTFq8cjHs5xRH6FH3UfLa53jzF3sLB7T8dZ5WzGzUzjPcgYcYG1VPn1dW=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHdRlv1mk8wKpKAWtpCSOHh3JryeiGuBWrHOO6YytmrZEVFxoyPX1zNxJm2zdX1X3Y7jTQinQUZcFW6VcqSziHYDyGiNi_4tidrdYyD6x2TlfJF3muJStlyykzrMP0Qcag6yeqeqJrWmnhjx6uQm0r3x=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- WHOLE IMAGE SECTION -->
-            <div class="grid-item-header">
-                <div class="grid-item-title">
-                    The Hermitage and Braan [2021]
-            </div>
-            </div>
-            <div class="image-grid">
-                <!-- COLUMN FOR GROUP TITLE -->
-                <div class="image-grid-column">
-                    <!-- ROW FOR GROUP TITLE -->
-                    <div class="image-grid-row">
-                        <!-- ALL THE IMAGES IN THE ROW -->
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHfGl8OgZ7bYh6hpDJYU5Z19BCNDK2yEGKlz2HZNoNu0dKqsTEZw46uc3u_43hJm8JEh4asOQlPsIvAQcGZncTteO_4rAPEJaTkuAFVdGmjUtuL_sKQIJiumU60NNphXAJzG3i_o_K8mMTpqWqL3S1Ig=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHc_VFNViCM_b2DQFHi3fxZ3TKEAy7RYrconpBiXB3Sa21lNt6Y6hlRdsGyyND80HZvmUW-8YUapgSwcVuicahros9CYxS3o0xMY8aByqBNgKj9euvTmsL3zJ5AYuz8_5pIYrbiaXds6Fzdr49u7vXUw=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcCFcSRbYTkMAVsOnPd0GcSkUcPg1Vf3OCjcxijaGu_cTH102x6KOvh5s3klQKJisu0JA_DeVaffQ1Cm5p6NgsX7tfxG84dTezecBvRe_kB2kZISD0C9kk0kO4mGKVpmsD5zB-T-L2_qRYGiiQGn3Xs=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHfbcUjuy1eZWr-eJamXkrgKC7-y102hJX1DgDlOj5JUkQX5pDn8jmQfj5dKdNQ96EFjZyhS7cKdsV6AYxao7xK4F_EjY0jNIXLU_ZJ-qTY1gMynsOwkPHYzUOxpVl-L-JofMsjTdQ5c_J295IvbuppR=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcucPCy5RXEovDgxTefzV6fK3WNfxC8Y1qsBEFPyG5CA4AGWZs5VSJF56TPLOqI2G8zBGBeFR0qD0EqKTjUjOZcrXbDbXMicbb7SSwCyQA2QFXl9kOy1NHj8a65ioBIHdb96YeLgKNntxfp9bXPs6fe=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHfEFF5wbxqYC52H5ZN3ferpalsmmg32CWiXhLlOcgPwk9AXiCav5mOae9kiTrZMGhCnDLriAHJ5d1KhIC18sSKaHUup6el2oJeS-p6VDInaLbEsHCjboT0r7FytJ1LjUwo_HN2jio7rzZsoKZTIMxKC=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- WHOLE IMAGE SECTION -->
-            <div class="grid-item-header">
-                <div class="grid-item-title">
-                    Isle of Arran [2021]
-            </div>
-            </div>
-            <div class="image-grid">
-                <!-- COLUMN FOR GROUP TITLE -->
-                <div class="image-grid-column">
-                    <!-- ROW FOR GROUP TITLE -->
-                    <div class="image-grid-row">
-                        <!-- ALL THE IMAGES IN THE ROW -->
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHec0zvO_2sbwJVShO4IvkYn5SnGVVs8Lb1xJ2OC4VdsONQfYh202kvZ2ewfWGZSM3scBzx2TMIwPoXt2Z4USk8hbWtElr-1OQm_ymKO0MMy0caxq7H7fNSQxj3bHBgMYacNLh1p-UQdiQjxZqM6bqak=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcF5iuBDa3ePig573veBzzgrGpwsTfTDVPPoNaG2T6DB370syWqOf5AtZpn02GPsZscNkfp6OCRIdUjCs72bPdNH0c6Qat6wdi8lXqR31x91vj-67ZWf_k-HUIOo4uAVyUAepR1R2EBf6xXYSMKC7C8=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHckxaQd0FdolRKobH619Uu0zn855hUgc2uuWg2SPyIahrc--cnTAUHOTwy3CVU0bPLuB8NY9sD336Ux5V0shYZMTLbPUf_W9ZPenhONHCPqXqZ_j_N5luvMfwgcJQaXCCSzYYPnMWe_7XP3tcYDisXf=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHdGYSjIqHZ3uaaURM-VK4dcpfq6Ma-6Oou0dhKlNGmNbmxRDELeW1r2NVWj77dRPrjGl9pTr8a4QICe6Fd1e-t9osS5Ls7-SytB_lH2NQTjMFEPGii0T57cajlodoggsbotILTkOLS5nb1TRW4SLxhG=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHetVAM6FO53pgRPuIDYgvNQuUt5qj5PL53aQhjtVxMPUMW3JwvVB4iWhtFxJNgEP07UCNbiQbHXuU8n60rdQIO974xfUtRJ8ELEy3MZaQ5fYybZcrbbiwK5XvjCb51HiQHqrYg4aJgYoctkoBFG1zTC=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcSS3-fMp9qu0N7wCRvjeq5y2TzkbtOkpjMzAjujAnL7QxS68PN991N9WNzQmededA1ztC-gcCL82L07CQBASQEH2WD0FHyr2Ekd9CNilRKVU3iTV7wvo8JLJDnCNc9PkI3LvXnWlPNySM0tbSp143T=w854-h1281-s-no?authuser=0" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- WHOLE IMAGE SECTION -->
-            <div class="grid-item-header">
-                <div class="grid-item-title">
-                    Arthur's Seat, Edinburgh [2021]
-            </div>
-            </div>
-            <div class="image-grid">
-                <!-- COLUMN FOR GROUP TITLE -->
-                <div class="image-grid-column">
-                    <!-- ROW FOR GROUP TITLE -->
-                    <div class="image-grid-row">
-                        <!-- ALL THE IMAGES IN THE ROW -->
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHf36fW3WnYklmDjj8BQmAKrenqUOjMtJ_Wh55XdOGByCSDJb61D0EfkrN0u7jAwBlJvTB6noyGKyafbfJaDtN3w4fXicYZY4F3-Abl6RozbAz_xGX1mBQF-5P0L0Baskti7mUaMlzxXppzwOU7aLzR3=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHfqm5mMaQ0aIVWUn4-PWAQB-YdMJ9l7_0GlKe9l9mmVpH0cXuKlGW2sZdS3rYdls74wXcwx4YceK0ijGlvPD576zYAy2GZ497CISamh59oEHj9Z3duEvnQgLTJneJPtjkPVPXGsQjJQc4u-odqqN7Hk=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHfkU6lwvZcad-cVC6jAEzElahJXMs4VWgtYSBND5k6J4-5frQ8SiyJdZ99MFRtC_9n_6-Y5CDPE791D7_Nvz9E5E7i_YTNqfJMtWTU0qa2EGFaD9z6zsGVWV672UyTCBc0R84p823IF1vtTTB0LrnWk=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHeKIDs89iHg_v5Y1neLkrYuXf13Wa6zkCbP2ibk6cGKSMexT8y42WY4xGHptCj2hgAc1H8z01O8mM-hC9MLFxDg7RzGlcoP_YMeQDYwcW2lQKUdGOGzLr6VnOb1gDr5LeuAPGPdFj_hyfmEiq-J84oS=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHebrleNNACBVc8tuEupboeLk2S08jCRRY8zHj23dPpOklcLm16yrt9lyiG6Gjd544Cd4ar1usmSekvR23laGBX2MHA6jfQjN1UgGDC7i00U8R-31bF03UwVhRDISdMIEzFZeP38Q3TPROE9AiFvT4i_=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHd9Qc-AvduFWBDSb_E4-O_b5KlYhGm7GYP9OY3VqLvlay7pTgSZ88TPXhLNK7NTcOyMG-RSagB59ccso8xoXYp2YJVWjcyCzDtL1l6ATHB2DKLcQfbt_FsWh3aQY3WMUoBOZIVCaeDDJTJakDhQXmn5=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- WHOLE IMAGE SECTION -->
-            <div class="grid-item-header">
-                <div class="grid-item-title">
-                    Random Garden Photos
-                </div>
-            </div>
-            <div class="image-grid">
-                <!-- COLUMN FOR GROUP TITLE -->
-                <div class="image-grid-column">
-                    <!-- ROW FOR GROUP TITLE -->
-                    <div class="image-grid-row">
-                        <!-- ALL THE IMAGES IN THE ROW -->
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHf53PJO7TXmin5aVbQ-uh6k8EwyoAQn5HrauHgRhXo_ry-hDLpFlVSdIpZ5pBBU3BN9Oq7fBU_gSCnrmQpD1Vpycr4vY7CbRhyJtLFBJg6EGnWQfGp2c2c7VjRUs85dciP7sS9oLdLHnB-wGFqJGKIB=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHe3gytA6w8e3D9UaZq_wr9PTPtSksHummDfeno08pWw7f6kSRxlIEPpzH24L26uMqNhzLjwcAcXG6qhtNa86qg4gFZ3I18WQ2NwsJ1JuZ1CYetxD32G4oKqW0el4LzYvYUiUSOaip0DjBMa6w2ADgvN=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHelRzrNxDAZNFIxCNb9swiv2Qyy67XlOrvIj92oRBVHsBQonyznVzKA7Ndh35OUzpuxoIDyeldCkeTXycJAW2wvJLVxTuF7ceVzQY4n26UozCqEIAH_y8z-aEpsn1Jf1TnhjbNAOm58ECXcoE1NegW5=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHea3UeTGQL0RjOrIw9xVP0r3SCNel1IkzrpTxbX0ndULgozD7A23WbARSNcxnMTpdBYoS4zkFdk1jqGBhkhs_PoVPhQk163toXmWKYFB7kSXtO8jYJp1mjR60ReQPulHE-0SlI4QExYgBSpwOn24R2_=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcjTIXhEmIQQ5_UvcVPa3YP7q4y0_CtQJUiKyqDrF1Wwg5vE6_LR9glQ2KG9ikXGUyxWBp-bAGfsF0NZ9uQ-jvD9zB0W2-6frhWeZJ4NMf5XbdsxebKbmcQoZFi5YFSzM3UplLgVTtOdleDubEQn-dv=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                        <div class="photo hidden">
-                            <img src="https://lh3.googleusercontent.com/pw/ADCreHftMpdW02aCv_T9Kgmey6T-JaVg74r48E_nelN60eiiK72exGCymQ9K7QkUAhYmlk2INQSnnM_0CONaCcDUlOBEDc36BRexLdsh30x7iLAW_mC9OJvxNLpq7vcewyNlYr4lx6wFNz1TKTESedtoOmju=w861-h1291-s-no?authuser=0" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">Hello! I'm Iain, a <strong>Robotics Process Automation Developer</strong> based in Scotland.</p>
+          <p class="about__description">I've recently (Oct 2023) started learning front-end web development to become familiar and comfortable with HTML, CSS, and JavaScript.</p>
+          <p class="about__description">I completed the Harvard CS50X course in 2020, which introduced me to C, Python, SQL, and more. I then immediately got stuck into several Udemy courses on C# and have been able to leverage this in my day job and have created numerous utility scripts to automate a variety of tasks.</p>
+          <hr class="about__hr"/>
+          <h3 class="about__subtitle">Interests</h3>
+          <div class="about__list-container">
+            <ul class="about__list">
+              <li class="about__list-item">Photography</li>
+              <li class="about__list-item">Reading</li>
+              <li class="about__list-item">Cycling</li>
+            </ul>
+            <ul class="about__list">
+              <li class="about__list-item">Programming</li>
+              <li class="about__list-item">TV & Movies</li>
+              <li class="about__list-item">Drawing</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img class="about__img" src="/tayo.jpg" alt="Photo of Tayo (dog)">
+        </div>
+      </section>
+
+      <section class="featured container section">
+        <h3 class="featured__subtitle">Featured Photos</h3>
+        <h2 class="featured__title">My Favourite Shots</h2>
+        <p class="featured__description">Placeholder text. Write something more meaningful in here.</p>
+        <ul class="featured__image-gallery">
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHd-PlCRWoHMn5kFHLOnz1eE2IapxVWYisyJEba9di_GDcY8M1llIkOhOpXqvjLquxuR0w88AYhKlRDV3mTkFAXM9IPgwMabhP395ZhruT-ID7gleHWGNNTBfhDaWiWOEis88CkyoRiL1-GPx4IgeJM0=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHc851TIAfunQwSuY7eza-FofVWDFRSXh0PvKSSGD6Hklsv1vCrfuYpAWVqJkLp1R6TQNe9hFyYDZOCtuauQsDk9yOmJmk1nwsSxFnNhLuWY0m2uYst7OyutHTL1rCJ05L4CqeYcPPyK4WTK2VOdBZwv=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHcqID_bbzi8-I_v4pdAZRDts-HDoRv9FGyhwBd26EwJIX83rLWHwucEjXsln1taPkSTk2ndpx_MKod5iHxCNhQxyvvO-lLyrcHyIiannVEQtoH7YVPYNPZOCnuY2L9ClfMDrcw7aW-w6nmFOL6c3QF6=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHd8OsHfW1nREhECKOozCz3ykR3t99ZjoPrf4EfLQRnfwFRN7RWVVF3pk4s38T0mxqxVTZ8E8ALSjaEOkhvA4_6PR0AK2dUzm3gtMS_QkujtywWrQYy5Syu4rADM8Zn408ROagC2aJzowaIfwuElEw2H=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHfsHex7B3EHE9n1Xyyi67RE2ersSCOIGloTjIf-a2nuTiBedztrpjdP-bWWeFFBYNHKSfTAZhdT1c7-UJmqkyBfbY8AWF9aHC-sVSYNzP5P3lemexkd_s4bw-96ot_I6rsBLHgtwrm-HTt2L48pFyNc=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdX2xNGgymGMjmEIHJITPn5prsovG2nUkDiqZv0D2vqH9M5Gff19fGgF05P9O5qPDWZbpsWO24j63ss_bC6_GZlrvIeX1gUl1ohRIi9Gj8Rz5p2qdyZ1RopEvXzPKT_-DBELBaliBaxb-wxrs4qxe5H=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHfeCHxprmIFdAL_yrIjdpBjQlR5S1JS_k4jWnFkqiwXMQ0lDCH48dS5860WyUarpMxSaAZhXyJXCEySkXdc1zuDSbRyr1E6RrKlLDgY1OZNbEqMEVexKG3gB889CCa7kZQ4j9FecoRiYgS69UCNcylC=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHfeUGmrGtNUzOq8puuu6f66aquqBwwOt0zbiNQb34Ck2Yfrp5KZg0dIsYOrJ_yeoSNArUeUU_SVlksCyIItJkzAkQNNAq3L1uMN6dy4GiJxshidrxS5GOIAlRvV2VAWjdmF08V0BWX2AkCP9nk6s82q=w1278-h852-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHcjTIXhEmIQQ5_UvcVPa3YP7q4y0_CtQJUiKyqDrF1Wwg5vE6_LR9glQ2KG9ikXGUyxWBp-bAGfsF0NZ9uQ-jvD9zB0W2-6frhWeZJ4NMf5XbdsxebKbmcQoZFi5YFSzM3UplLgVTtOdleDubEQn-dv=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHc_z2X6Cdq4KJQnSdVWjJG0JRrc1Gj5cJbEwb2xdMfoCyYJaZ1ob4ilPpIZGzzosKF-6711t7Ujc2Tfhf9rfEKqZ94R72RVYQBO6cKiOKQ7pFTkRgrAdt3XZHonZllCE0nbkAAeJvzj2Z-DGAsqb3If=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHfGuop-DX-FvWe7vuAeffiuJ-DzxYjSx78fVOljV8RklzZZUwM_ELEeAa511RUr9NMs5wv9H5iBQZbgBMLbp0ndHYsD8_uYr4dzGk_zaHOsEMsOZ25EuplDsczu5IIYcIXICc73NL03B9mzP2KxHGDC=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHfEFF5wbxqYC52H5ZN3ferpalsmmg32CWiXhLlOcgPwk9AXiCav5mOae9kiTrZMGhCnDLriAHJ5d1KhIC18sSKaHUup6el2oJeS-p6VDInaLbEsHCjboT0r7FytJ1LjUwo_HN2jio7rzZsoKZTIMxKC=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHcCFcSRbYTkMAVsOnPd0GcSkUcPg1Vf3OCjcxijaGu_cTH102x6KOvh5s3klQKJisu0JA_DeVaffQ1Cm5p6NgsX7tfxG84dTezecBvRe_kB2kZISD0C9kk0kO4mGKVpmsD5zB-T-L2_qRYGiiQGn3Xs=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHef-Cxy7Hmdi6yqjapRmbXLlShcC-6hGGcAKwnHVh0dtike7WGUdNXXcYPEZZh3fb6PDfH7Pydn7x34Immp2LM0oHOigywcxTtmYKuXiEmv3o5mjuR6PUSGRwpBQVNTr_lFxFhwdYxTHg3adC8UoT4I=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHetVAM6FO53pgRPuIDYgvNQuUt5qj5PL53aQhjtVxMPUMW3JwvVB4iWhtFxJNgEP07UCNbiQbHXuU8n60rdQIO974xfUtRJ8ELEy3MZaQ5fYybZcrbbiwK5XvjCb51HiQHqrYg4aJgYoctkoBFG1zTC=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdGYSjIqHZ3uaaURM-VK4dcpfq6Ma-6Oou0dhKlNGmNbmxRDELeW1r2NVWj77dRPrjGl9pTr8a4QICe6Fd1e-t9osS5Ls7-SytB_lH2NQTjMFEPGii0T57cajlodoggsbotILTkOLS5nb1TRW4SLxhG=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHcF5iuBDa3ePig573veBzzgrGpwsTfTDVPPoNaG2T6DB370syWqOf5AtZpn02GPsZscNkfp6OCRIdUjCs72bPdNH0c6Qat6wdi8lXqR31x91vj-67ZWf_k-HUIOo4uAVyUAepR1R2EBf6xXYSMKC7C8=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdvaJD1n3Z1gOYNLN9vdzw_vENRL-CRmeGw45DogVjm_RNkM3LFv3KZVTIBgFfppixbn1lHscLBYhyLXRlw7B_iwUewDCypnnDBlvAbHoe0DRW5yo3tVBmBPueojmnw6ejqNugPaCjEQPdZzoEjk17i=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHeSQ78B9XR0n-5e65i9iJJOHkOHI5lLEc-TFcKDJ-7rwroW4uMj3K9XqQ8YbMQWJKoWsmi78bIqNJmETMAOJEii3MfxBesnhX4a0TfdzaYkORR7enP3jMQEZOttmd2jDn_Jnm-N6ooMoarTVdwvJ2Jm=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHf53PJO7TXmin5aVbQ-uh6k8EwyoAQn5HrauHgRhXo_ry-hDLpFlVSdIpZ5pBBU3BN9Oq7fBU_gSCnrmQpD1Vpycr4vY7CbRhyJtLFBJg6EGnWQfGp2c2c7VjRUs85dciP7sS9oLdLHnB-wGFqJGKIB=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdyxQXf-M5LB66gLQ0VC234ikKhgGdK_540lQwS9W_UXUYf-gDJIhfOs5l2MM4kWnAxfPVEqImixwkZ27M9alxnNTgcfqaWv-ZJhAjXxK0sppAnvhGYIxyd_-AyQtkhR2smupiVxA1UWLeZMaNyrS9v=w1278-h852-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHe3gytA6w8e3D9UaZq_wr9PTPtSksHummDfeno08pWw7f6kSRxlIEPpzH24L26uMqNhzLjwcAcXG6qhtNa86qg4gFZ3I18WQ2NwsJ1JuZ1CYetxD32G4oKqW0el4LzYvYUiUSOaip0DjBMa6w2ADgvN=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdKVyqfoLCmpa7-awYYvVXq7mCMGfzkZZ12dxqiCwd4Ta-YTeYlrnTCyI25ohYY4GbKSkI1j_T5lL7Ag6d_rez7P62fz4oH7kw0I8L2Ih2jM8-YUN3rumrR8K1RwOHyqGDlkhR3_sQdo69xtbFyFe5-=w1278-h852-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdzbd3g8_VIt6E8lYrzhdmpeGCOv-6uyqReZUpBVNwO6u49ACq6tzFq83vGIpAIXhvA0NquFcLEqE64bwui7Vx6NNsHbJqCuJfJ0wfQkf7TQVClFa5b28oTwIv9qGs02fKd_arSsW7bk0CT8LWRkV4l=w1278-h852-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHd9Qc-AvduFWBDSb_E4-O_b5KlYhGm7GYP9OY3VqLvlay7pTgSZ88TPXhLNK7NTcOyMG-RSagB59ccso8xoXYp2YJVWjcyCzDtL1l6ATHB2DKLcQfbt_FsWh3aQY3WMUoBOZIVCaeDDJTJakDhQXmn5=w854-h1281-s-no?authuser=0" alt="">
+          </li>
+          <li>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdEJn-CxhnkWxuEzGgPrMCF8QdIK5W5Tgt1ei848Zi6bVG3MBLFlntQr782DpprkNWLlIruijxgV2uS0xNDf-qWYFGrYOFg0YLSDdsiJwLhyir0CTf1BEA2687lWMv58K9X7aTrf9KwFIEZDeddD-GY=w1278-h852-s-no?authuser=0" alt="">
+          </li>
+        </ul>
+      </section>
+
+      <section></section>
+
+      <section></section>
     </main>
-</body>
+    <footer>
+
+    </footer>
+    <script type="module" src="./source/main.js"></script>
+  </body>
 </html>
